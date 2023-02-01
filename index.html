@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icon links -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <main id="main">
+      <section id="todolist">
+        <div class="todolist_title">
+          <div class="container">
+            <h1>Todo List</h1>
+            <p>Get things done, one item at a time.</p>
+          </div>
+        </div>
+
+        <ul class="todo_list"></ul>
+
+        <div class="todolist_end">
+          <div class="container">
+            <p class="end-title">Move done items at the end?</p>
+            <div class="toggle_button" onclick="moveEnd()">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <form class="addtodo">
+          <div class="container">
+            <h2>Add to the todo list</h2>
+            <input type="text" class="input">
+            <button class="add_item">ADD ITEM</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Java Script ***************************** -->
+    <script src="/js/todoArray.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

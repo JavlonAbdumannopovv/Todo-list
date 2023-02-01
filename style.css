@@ -1,0 +1,174 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+/* Icon style */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  transition: all 0.4s ease;
+}
+
+body {
+  background: #fff;
+}
+
+#todolist {
+  width: 500px;
+  min-height: 630px;
+  margin: 100px auto;
+  padding: 32px 0 55px;
+  background: #f67070;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+}
+
+.container {
+  width: 395px;
+  margin: auto;
+}
+
+.todolist_title {
+  width: 395px;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.todolist_title h1 {
+  font-weight: normal;
+  font-size: 41.6px;
+  letter-spacing: 0.05em;
+}
+
+.todolist_title p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 0.7rem;
+}
+
+.todo_list {
+  margin: 50px 0 0 0;
+}
+
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  margin: 0 0 4px;
+  padding: 20px 52.5px;
+  background: #fd8484;
+}
+
+.list_item span {
+  width: 340px;
+}
+
+.list_item.delete{
+  font-size:20px;
+  text-decoration:line-through;
+}
+
+.list_item.none{
+  display:none !important;
+}
+
+ion-icon {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+
+
+.todolist_end {
+  margin: 25px 0 0 0;
+  letter-spacing: 2px;
+}
+
+.todolist_end .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.end-title {
+  font-size: 15px;
+  padding: 0 10px 0;
+}
+
+.toggle_button {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 23px;
+  background: #fff;
+  border-radius: 30px;
+  cursor:pointer;
+}
+
+.toggle_button span {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: #fd8484;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.toggle_button.active span {
+  left:16.5px;
+}
+
+.addtodo {
+  margin: 50px auto 0;
+}
+
+.addtodo h2 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.addtodo input {
+  width: 263px;
+  height: 55px;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 2px;
+  padding: 10px;
+  color: #000;
+  font-size: 20px;
+  border: 3px solid #fff;
+}
+
+.addtodo input:focus {
+  border: 3px solid #3584e4;
+}
+
+.addtodo button {
+  width: 110px;
+  height: 55px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #f67070;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.addtodo button:hover {
+  background: #fd8484;
+}
